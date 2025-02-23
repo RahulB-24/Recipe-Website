@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Hub</title>
+    <link rel="stylesheet" href="italian.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+
+    <header>
+        <div id="tmain">
+        <div id="title">    
+            <img src="data:image/png;base64,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">
+        </div>
+        <div id="tnav">
+        <nav>
+            <a href="main.html">🏠 Home</a>
+            <a href="chinese.html">🥢 Chinese</a>
+            <a href="indian.html">🍛 Indian</a>
+            <a href="italian.html">🍕 Italian</a>
+            <a href="american.html">🍔 American</a>
+        </nav>
+        </div>
+        <div id="tsearch1">
+            <input type="text" placeholder="🔎Search for Dishes" id="tsearch2">
+        </div>
+        </div>
+    </header>
+
+    
+    <main>
+        <section><h1>Indian Recipes</h1></section>
+        <div class="container">
+            <div class="dish-card" onclick="toggleRecipe(this)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2o86IDNmk8t6E2yl-5LPK401pby8B2BX0Vg&s" alt="Dish 1" class="dish-image">
+                <div class="dish-name">Dish 1</div>
+                <div class="recipe">
+                    <h3>Full Recipe for Dish 1</h3>
+                    <p>This is a detailed description of how to make Dish 1...</p>
+                </div>
+            </div>
+        
+            <div class="dish-card" onclick="toggleRecipe(this)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2o86IDNmk8t6E2yl-5LPK401pby8B2BX0Vg&s" alt="Dish 2" class="dish-image">
+                <div class="dish-name">Dish 2</div>
+                <div class="recipe">
+                    <h3>Full Recipe for Dish 2</h3>
+                    <p>This is a detailed description of how to make Dish 2...</p>
+                </div>
+            </div>
+            <div class="dish-card" onclick="toggleRecipe(this)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2o86IDNmk8t6E2yl-5LPK401pby8B2BX0Vg&s" alt="Dish 2" class="dish-image">
+                <div class="dish-name">Dish 3</div>
+                <div class="recipe">
+                    <h3>Full Recipe for Dish 3</h3>
+                    <p>This is a detailed description of how to make Dish 2...</p>
+                </div>
+            </div>
+            <div class="dish-card" onclick="toggleRecipe(this)">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2o86IDNmk8t6E2yl-5LPK401pby8B2BX0Vg&s" alt="Dish 2" class="dish-image">
+                <div class="dish-name">Dish 4</div>
+                <div class="recipe">
+                    <h3>Full Recipe for Dish 4</h3>
+                    <p>This is a detailed description of how to make Dish 2...</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+    <footer>
+        <p>🧑‍🍳 Cooked by Rahul Balachandar 23BAI1570 🧑‍🍳</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
+
+

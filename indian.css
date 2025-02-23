@@ -1,0 +1,214 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg');
+background-size: cover;
+}
+
+header {
+    background: rgba(206,116,8,255);
+    border: 3px solid white;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 85px;
+    top: 0;
+    z-index: 1000;
+}
+nav a{
+    font-family: "Sofia";
+}
+
+#tmain{
+    width: 100%;
+    display: flex   ;
+    margin-top: 0%  ;
+    height:90px;
+    padding-top: 0px;
+}
+#title{
+    width: auto;
+    height: 10px;
+    margin-top: 0%;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    width: 20%;
+    text-align: center;
+
+}
+#title img{
+    width:230px;
+    height: 90px;
+    padding-right: 20px;
+
+}
+#tnav{
+
+
+    border-left: 2px solid white;
+    height: 95px;
+    padding-right:5px;
+    width: 60%;
+    text-align: center;
+    font-size: 19px;
+
+
+}
+
+#tsearch1{
+
+    width: 20%;
+    float: right;
+    margin: auto;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-left: 2px solid white;
+    height: 63.5px;
+    margin-top: 1px;
+    padding-top: 30.5px;
+}
+#tsearch2{
+    border-radius: 20px;
+    border: 2px solid white;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    font-family: "Sofia";
+}
+
+#tsearch2:focus{
+    border: 1px solid black;
+    width:170px;
+}
+
+#tsearch2:hover{
+    width: 170px
+
+
+}
+
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(50, 48, 48);
+}
+a:active{
+    color: white;
+}
+
+nav {
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+}
+
+main {
+    margin-top: 90px;
+    padding: 20px;
+    color: black;
+}
+main p{
+    font-family: 'Sofia';
+    font-size: 32px;
+    font-weight: bold;
+    color: black ;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: auto;
+    background-color: rgba(206,116,8,255);
+    color: white;
+    font-family: "Arial";
+    text-align: center;
+ }
+
+ .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dish-card {
+    background-color: #fff;
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+}
+
+.dish-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.dish-name {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #eee;
+    font-size: 18px;
+}
+
+.recipe {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    max-height: 400px;
+    overflow-y: auto;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.show-recipe .recipe {
+    display: block;
+    max-height: 500px;
+    padding: 20px;
+}
+
+.recipe h3 {
+    margin-top: 0;
+}
+
+.recipe p {
+    line-height: 1.5;
+}
+
+
+
