@@ -1,16 +1,17 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sofia';
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     text-align: center;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
     url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg');
-background-size: cover;
+    background-size: cover;
 }
 
+/* Nav bar (header and its elements) remain unchanged */
 header {
-    background: rgba(206,116,8,255);
+    background: #BB133E; /* Header background uses red */
     border: 3px solid white;
     color: white;
     padding: 20px;
@@ -20,18 +21,20 @@ header {
     top: 0;
     z-index: 1000;
 }
-nav a{
+
+nav a {
     font-family: "Sofia";
+    color: white;
 }
 
-#tmain{
+#tmain {
     width: 100%;
-    display: flex   ;
-    margin-top: 0%  ;
-    height:90px;
+    display: flex;
+    margin-top: 0%;
+    height: 90px;
     padding-top: 0px;
 }
-#title{
+#title {
     width: auto;
     height: 10px;
     margin-top: 0%;
@@ -41,29 +44,21 @@ nav a{
     float: left;
     width: 20%;
     text-align: center;
-
 }
-#title img{
+#title img {
     width:230px;
     height: 90px;
     padding-right: 20px;
-
 }
-#tnav{
-
-
+#tnav {
     border-left: 2px solid white;
     height: 95px;
     padding-right:5px;
     width: 60%;
     text-align: center;
     font-size: 19px;
-
-
 }
-
-#tsearch1{
-
+#tsearch1 {
     width: 20%;
     float: right;
     margin: auto;
@@ -74,7 +69,7 @@ nav a{
     margin-top: 1px;
     padding-top: 30.5px;
 }
-#tsearch2{
+#tsearch2 {
     border-radius: 20px;
     border: 2px solid white;
     height: 30px;
@@ -82,35 +77,27 @@ nav a{
     text-align: center;
     font-family: "Sofia";
 }
-
-#tsearch2:focus{
+#tsearch2:focus {
     border: 1px solid black;
     width:170px;
 }
-
-#tsearch2:hover{
-    width: 170px
-
-
+#tsearch2:hover {
+    width: 170px;
 }
-
-h1 a{
+h1 a {
     text-decoration: none;
     color: white;
 }
-
-nav a:hover{
+nav a:hover {
     color: rgb(50, 48, 48);
 }
-a:active{
+a:active {
     color: white;
 }
-
 nav {
     margin-top: 20px;
     padding-top: 15px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
@@ -120,22 +107,22 @@ nav a {
     transition: 0.3s ease;
     border-radius: 5px;
 }
-
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 12px;
 }
 
+/* Everything outside the nav bar uses red for font and borders */
 main {
     margin-top: 90px;
     padding: 20px;
-    color: black;
+    color: #BB133E;
 }
-main p{
+main p {
     font-family: 'Sofia';
     font-size: 32px;
     font-weight: bold;
-    color: black ;
+    color: #BB133E;
 }
 
 footer {
@@ -144,50 +131,74 @@ footer {
     width: 100%;
     height: 50px;
     padding: auto;
-    background-color: rgba(206,116,8,255);
-    color: white;
+    background-color: #3C3B6E; /* Footer background remains deep blue */
+    color: white;  /* Updated font color */
     font-family: "Arial";
     text-align: center;
- }
+}
 
-
- .container {
+/* Containers and Cards */
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    /* Container border removed so only the section gets the border */
 }
 
 .dish-card {
-    background-color: #fff;
-    border-radius: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
     position: relative;
+    width: 300px;
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: white;
+    border: 2px solid #BB133E; /* Increased red border size for individual dish card */
 }
 
 .dish-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .dish-image {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
+    object-position: center;
 }
 
 .dish-name {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #BB133E; /* Updated font color */
     text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    background-color: #eee;
-    font-size: 18px;
+    background: white;
 }
 
+/* Meal Sections (e.g., Breakfast, Lunch, Dinner) */
+.meal-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #BB133E; /* Added red border around each meal section */
+}
+
+.meal-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #BB133E; /* Updated font color */
+    font-size: 2rem;
+}
+
+/* Recipe Section */
 .recipe {
     display: none;
     padding: 10px;
@@ -209,4 +220,234 @@ footer {
 
 .recipe p {
     line-height: 1.5;
+    color: #BB133E;
+}
+
+/* Featured Section */
+.featured-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.featured-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 400px;
+}
+
+.featured-carousel .dish-card {
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.featured-carousel .dish-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel Buttons remain unchanged since they are interactive */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+    left: 20px;
+}
+
+.carousel-button.next {
+    right: 20px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 70%;
+    max-width: 1000px;
+    margin: 5vh auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 3px solid #BB133E; /* Increased red border size */
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.modal-nav {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.modal-nav:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #BB133E; /* Updated font color */
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #BB133E;
+}
+
+.recipe-details {
+    flex-grow: 1;
+    padding: 0 40px;
+}
+
+.recipe-details h2 {
+    color: #BB133E; /* Updated font color */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.recipe-details p {
+    color: #BB133E; /* Updated font color */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.recipe-instructions {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.recipe-instructions h3 {
+    color: #BB133E; /* Updated font color */
+    margin-bottom: 15px;
+}
+
+.recipe-instructions p {
+    margin: 0;
+    white-space: pre-line;
+}
+
+/* Alternate Container for Flex Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    /* Alternate container border removed */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        margin: 10vh auto;
+    }
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .featured-carousel {
+        height: 300px;
+    }
+    .dish-card {
+        width: calc(50% - 30px);
+    }
+    .modal-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dish-card {
+        width: 100%;
+    }
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+    .recipe-details {
+        padding: 0 20px;
+    }
 }
