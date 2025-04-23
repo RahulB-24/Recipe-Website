@@ -1,18 +1,18 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Sofia';
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     text-align: center;
     background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
     url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg');
-background-size: cover;
+    background-size: cover;
 }
 
 header {
-    background: rgba(206,116,8,255);
-    border: 3px solid white;
-    color: white;
+    background: #FF9933; /* Saffron */
+    border: 3px solid #FFFFFF; /* White */
+    color: #FFFFFF;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -20,18 +20,19 @@ header {
     top: 0;
     z-index: 1000;
 }
-nav a{
+nav a {
     font-family: "Sofia";
+    color: #FFFFFF;
 }
 
-#tmain{
+#tmain {
     width: 100%;
-    display: flex   ;
-    margin-top: 0%  ;
-    height:90px;
+    display: flex;
+    margin-top: 0%;
+    height: 90px;
     padding-top: 0px;
 }
-#title{
+#title {
     width: auto;
     height: 10px;
     margin-top: 0%;
@@ -41,78 +42,64 @@ nav a{
     float: left;
     width: 20%;
     text-align: center;
-
 }
-#title img{
+#title img {
     width:230px;
     height: 90px;
     padding-right: 20px;
-
 }
-#tnav{
-
-
-    border-left: 2px solid white;
+#tnav {
+    border-left: 2px solid #FFFFFF;
     height: 95px;
     padding-right:5px;
     width: 60%;
     text-align: center;
     font-size: 19px;
-
-
+    color: #000080;
 }
-
-#tsearch1{
-
+#tsearch1 {
     width: 20%;
     float: right;
     margin: auto;
     margin-top: 20px;
     padding-top: 15px;
-    border-left: 2px solid white;
+    border-left: 2px solid #FFFFFF;
     height: 63.5px;
     margin-top: 1px;
     padding-top: 30.5px;
 }
-#tsearch2{
+#tsearch2 {
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid #FFFFFF;
     height: 30px;
     width: 150px;
     text-align: center;
     font-family: "Sofia";
+    color: #000080;
 }
-
-#tsearch2:focus{
+#tsearch2:focus {
     border: 1px solid black;
     width:170px;
 }
-
-#tsearch2:hover{
-    width: 170px
-
-
+#tsearch2:hover {
+    width: 170px;
 }
-
-h1 a{
+h1 a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
-
-nav a:hover{
+nav a:hover {
     color: rgb(50, 48, 48);
 }
-a:active{
-    color: white;
+a:active {
+    color: #FFFFFF;
 }
-
 nav {
     margin-top: 20px;
     padding-top: 15px;
 }
-
 nav a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -120,37 +107,36 @@ nav a {
     transition: 0.3s ease;
     border-radius: 5px;
 }
-
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.3);
     padding: 12px;
 }
-
 main {
     margin-top: 90px;
     padding: 20px;
-    color: black;
+    color: #000080;
 }
-main p{
+main p {
     font-family: 'Sofia';
     font-size: 32px;
     font-weight: bold;
-    color: black ;
+    color: #000080;
 }
-
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 50px;
     padding: auto;
-    background-color: rgba(206,116,8,255);
-    color: white;
+    background-color: #138808; /* Green */
+    color: #FFFFFF;
     font-family: "Arial";
     text-align: center;
- }
+}
+ 
+/* For dish boxes and other content areas, we keep a white background with a chakra blue border */
 
- .container {
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -160,40 +146,49 @@ footer {
 }
 
 .dish-card {
-    background-color: #fff;
-    border-radius: 1px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease;
     position: relative;
+    width: 300px;
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background: #FFFFFF; /* White background */
+    color: #000080;  /* Chakra blue text */
+    border: 2px solid #000080; /* Blue border */
 }
 
 .dish-card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .dish-image {
     width: 100%;
-    height: 150px;
+    height: 200px;
     object-fit: cover;
+    object-position: center;
 }
 
 .dish-name {
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #000080; /* Chakra blue text */
     text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    background-color: #eee;
-    font-size: 18px;
+    background: #FFFFFF; /* White background for dish name */
+    /* Removed border-top as requested */
 }
 
 .recipe {
     display: none;
     padding: 10px;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF; /* White background */
     max-height: 400px;
     overflow-y: auto;
     transition: max-height 0.3s ease, padding 0.3s ease;
+    color: #000080;
+    border: 2px solid #000080; /* Blue border */
 }
 
 .show-recipe .recipe {
@@ -204,11 +199,257 @@ footer {
 
 .recipe h3 {
     margin-top: 0;
+    color: #000080;
 }
 
 .recipe p {
     line-height: 1.5;
+    color: #000080;
 }
 
+.featured-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background: #FFFFFF; /* White background */
+    border-radius: 8px;
+    color: #000080;
+    border: 2px solid #000080; /* Blue border */
+}
 
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.featured-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 400px;
+}
+
+.featured-carousel .dish-card {
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.featured-carousel .dish-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button.prev {
+    left: 20px;
+}
+
+.carousel-button.next {
+    right: 20px;
+}
+
+.meal-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #FFFFFF; /* White background */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000080;
+    border: 2px solid #000080; /* Blue border */
+}
+
+.meal-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #000080;
+    font-size: 2rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 70%;
+    max-width: 1000px;
+    margin: 5vh auto;
+    background-color: #FFFFFF; /* White background for modal */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-height: 90vh;
+    overflow-y: auto;
+    color: #000080; /* Chakra blue text for modal content */
+    border: 2px solid #000080; /* Blue border */
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.modal-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.modal-nav {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.modal-nav:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.recipe-details {
+    flex-grow: 1;
+    padding: 0 40px;
+}
+
+.recipe-details h2 {
+    color: #000080;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.recipe-details p {
+    color: #000080;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.recipe-instructions {
+    background: #FFFFFF; /* White background for instructions */
+    padding: 20px;
+    border-radius: 8px;
+    color: #000080;
+    border: 2px solid #000080; /* Blue border */
+}
+
+.recipe-instructions h3 {
+    color: #000080;
+    margin-bottom: 15px;
+}
+
+.recipe-instructions p {
+    margin: 0;
+    white-space: pre-line;
+    color: #000080;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%;
+        margin: 10vh auto;
+    }
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .featured-carousel {
+        height: 300px;
+    }
+    .dish-card {
+        width: calc(50% - 30px);
+    }
+    .modal-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dish-card {
+        width: 100%;
+    }
+    .modal-content {
+        width: 95%;
+        padding: 15px;
+    }
+    .recipe-details {
+        padding: 0 20px;
+    }
+}
