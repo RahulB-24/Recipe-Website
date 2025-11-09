@@ -36,4 +36,3 @@ Whether you're a beginner or a seasoned chef, Recipe Hub has recipes tailored to
 3. Click recipe card to view details
 4. Follow steps to cook
 
-## Folder Structure
