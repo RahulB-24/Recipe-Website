@@ -10,3 +10,32 @@ Explore our hand-picked **featured recipes**, showcasing must-try dishes from ea
 
 🍽️ **Cook with Confidence**  
 Whether you're a beginner or a seasoned chef, Recipe Hub has recipes tailored to your skill level. Get inspired, get cooking, and **say it with food!**
+
+
+<p align="center">
+  <img src="images/1.png" width="700"/>
+</p>
+
+## Features
+- Multi cuisine support
+- Featured recipe showcase
+- Category based browsing
+- No JavaScript dependency
+- Theme adapts per cuisine
+
+## Cuisines
+<p align="center">
+  <img src="images/2.png" width="300"/>
+  <img src="images/3.png" width="300"/>
+  <img src="images/4.png" width="300"/>
+  <img src="images/5.png" width="300"/>
+</p>
+
+## Usage
+1. Open the website
+2. Select cuisine
+3. Click recipe card to view details
+4. Follow steps to cook
+
+## Folder Structure
+
