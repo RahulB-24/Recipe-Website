@@ -11,9 +11,8 @@ Explore our hand-picked **featured recipes**, showcasing must-try dishes from ea
 🍽️ **Cook with Confidence**  
 Whether you're a beginner or a seasoned chef, Recipe Hub has recipes tailored to your skill level. Get inspired, get cooking, and **say it with food!**
 
-
 <p align="center">
-  <img src="images/1.png" width="700"/>
+  <img src="https://github.com/user-attachments/assets/7da634b5-d1d3-4bbc-970e-0d8a59410412" width="700"/>
 </p>
 
 ## Features
@@ -25,10 +24,10 @@ Whether you're a beginner or a seasoned chef, Recipe Hub has recipes tailored to
 
 ## Cuisines
 <p align="center">
-  <img src="images/2.png" width="300"/>
-  <img src="images/3.png" width="300"/>
-  <img src="images/4.png" width="300"/>
-  <img src="images/5.png" width="300"/>
+  <img src="https://github.com/user-attachments/assets/1bc8a32f-0551-48ca-a86f-e5c08795eab8" width="300"/>
+  <img src="https://github.com/user-attachments/assets/1e45414a-3745-4ac1-be54-abc246340457" width="300"/>
+  <img src="https://github.com/user-attachments/assets/53026e68-c9fd-414a-a180-ae4224e2d233" width="300"/>
+  <img src="https://github.com/user-attachments/assets/d89e6c9c-f7cb-41f7-bd20-84b13e32d425" width="300"/>
 </p>
 
 ## Usage
@@ -38,4 +37,3 @@ Whether you're a beginner or a seasoned chef, Recipe Hub has recipes tailored to
 4. Follow steps to cook
 
 ## Folder Structure
-
